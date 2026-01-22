@@ -1,3 +1,31 @@
-site_name: My Docs
+site_name: Sample Documentation
+site_description: Configuration, modules, and operational reference for Teldio Fabric and SMC Gateway
+site_author: anovun
+site_url: https://amydigitalportal.github.io/mkdocs-test/
+
+repo_name: amydigitalportal/mkdocs-test
+repo_url: https://github.com/amydigitalportal/mkdocs-test
+
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
