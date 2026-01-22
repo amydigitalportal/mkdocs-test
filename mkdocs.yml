@@ -1,17 +1,15 @@
-site_name: Sample Documentation
-site_description: Configuration, modules, and operational reference for Teldio Fabric and SMC Gateway
-site_author: anovun
-site_url: https://amydigitalportal.github.io/mkdocs-test/
+site_name: Docs
+site_description: Hello world documentation site
+site_url: https://<your-github-username>.github.io/<your-repo>/
 
-repo_name: amydigitalportal/mkdocs-test
-repo_url: https://github.com/amydigitalportal/mkdocs-test
+repo_name: <your-github-username>/<your-repo>
+repo_url: https://github.com/<your-github-username>/<your-repo>
 
 theme:
   name: material
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.expand
     - navigation.top
     - search.suggest
     - search.highlight
@@ -19,13 +17,11 @@ theme:
 nav:
   - Home: index.md
 
+plugins:
+  - search
+
 markdown_extensions:
   - admonition
-  - attr_list
-  - footnotes
   - tables
   - toc:
       permalink: true
-
-plugins:
-  - search
